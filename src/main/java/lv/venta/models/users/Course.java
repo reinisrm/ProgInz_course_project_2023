@@ -2,11 +2,15 @@ package lv.venta.models.users;
 
 
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
@@ -44,7 +48,8 @@ public class Course {
 	@Column(name = "CreditPoints")
 	private int creditPoints;
 	
-
+	@ManyToMany(mappedBy = "debtCourses")
+	private Collection<Student> debtStudents = new ArrayList<Student>();
 	
 	
 
