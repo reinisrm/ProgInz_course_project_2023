@@ -1,4 +1,4 @@
-package lv.venta.models.users;
+package lv.venta.models;
 
 
 
@@ -21,6 +21,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import lv.venta.models.users.Student;
 
 
 
