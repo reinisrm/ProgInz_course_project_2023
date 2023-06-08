@@ -17,6 +17,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import lv.venta.models.users.AcademicPersonel;
 import lv.venta.models.users.Student;
 
 //parlikt uz citu tabulu, kurai ir saite ar pasniedzeju, kas to temu piedava
@@ -73,6 +74,11 @@ public class Thesis {
 	@ManyToOne
 	@JoinColumn(name = "Ids")
 	private Student student;
+	
+	@ManyToOne
+	@JoinColumn(name = "Ida")
+	private AcademicPersonel supervisor;
+	//TODO ja nepieciesams, izveidot saiti ar konsultantu/vertetaju utt.
 	
 	
 	
