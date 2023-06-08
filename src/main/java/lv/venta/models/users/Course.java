@@ -29,7 +29,7 @@ import lombok.ToString;
 public class Course {
 	
 	@Setter(value = AccessLevel.NONE)
-	@Column(name = "idc")
+	@Column(name = "Idc")
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	public long idc;
@@ -37,7 +37,7 @@ public class Course {
 	@Column(name = "Title")
 	@NotNull
 	@Size(min = 3, max = 15)
-	public String Title;
+	public String title;
 	
 	@Min(value = 1)
 	@Max(value = 20)
@@ -49,7 +49,7 @@ public class Course {
 	
 
 	public Course(@NotNull @Size(min = 3, max = 15) String title, @Min(1) @Max(20) int creditPoints) {
-		Title = title;
+		this.title = title;
 		this.creditPoints = creditPoints;
 		
 	}
