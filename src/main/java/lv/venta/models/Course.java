@@ -30,7 +30,7 @@ import lv.venta.models.users.Student;
 @Getter
 @Setter
 @NoArgsConstructor
-@ToString
+//@ToString
 public class Course {
 	
 	@Setter(value = AccessLevel.NONE)
