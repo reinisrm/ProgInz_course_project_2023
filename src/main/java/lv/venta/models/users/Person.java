@@ -53,7 +53,7 @@ public class Person {
 	private String personcode;
 	
 	@OneToOne
-	@JoinColumn(name = "idu")
+	@JoinColumn(name = "Idu")
 	private User user;
 
 	public Person(@NotNull @Size(min = 3, max = 15) String name, @NotNull @Size(min = 3, max = 15) String surname,

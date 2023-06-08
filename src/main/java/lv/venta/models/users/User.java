@@ -26,7 +26,7 @@ import lombok.Setter;
 public class User {
 	
 	@Setter(value = AccessLevel.NONE)
-	@Column(name = "idu")
+	@Column(name = "Idu")
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	public long idu;
