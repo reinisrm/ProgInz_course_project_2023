@@ -59,7 +59,6 @@ public class Person {
 	public Person(@NotNull @Size(min = 3, max = 15) String name, @NotNull @Size(min = 3, max = 15) String surname,
 			@NotNull @Size(min = 12, max = 12) @Pattern(regexp = "[0-9]{6}-[0-9]{5}", message = "Neatbilstošs personas kods") String personcode,
 			User user) {
-		super();
 		this.name = name;
 		this.surname = surname;
 		this.personcode = personcode;
